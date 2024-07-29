@@ -1961,9 +1961,10 @@
   }
   #Demo .site-search {
     top: 123px;
+    width: 389px;
   }
   #Demo .site-search input {
-    border: 0;
+    border: 1px solid #202020;
   }
   #Demo .red,
   #Demo .green,
@@ -1975,6 +1976,12 @@
   }
   #Demo .card:first-child {
     margin: 7px 0 8px 0;
+  }
+  #Demo .card._demo {
+    border-radius: 0;
+  }
+  #Demo .card._demo > a {
+    border-radius: 0;
   }
   #Demo .card .info .flexible {
     font-size: 85%;
@@ -1994,11 +2001,25 @@
     line-height: 19px;
     padding-left: 22px;
   }
+  #Demo .card .info p {
+    opacity: 1;
+  }
+  #Demo .card .info .flexible a,
+  #Demo .card .info .flexible span {
+    opacity: 1;
+  }
+  #Demo .card .info .frequency {
+    opacity: 1;
+  }
+  #Demo .card .foto {
+    border-radius: 0;
+  }
   #Demo .article ol,
   #Demo .article ul {
     list-style: none;
     margin: 12px 0 12px 20px;
     overflow: hidden;
+    font-size: 85%;
   }
   #Demo .article ol li,
   #Demo .article ul li {
@@ -2008,12 +2029,17 @@
   #Demo .article ul li:before {
     display: none;
   }
+  #Demo .article ol li time,
+  #Demo .article ul li time {
+    min-width: 140px;
+  }
   #Demo .article {
     margin-bottom: 16px;
   }
   #Demo .article p {
     margin: 12px 0 12px 20px;
     text-align: justify;
+    font-size: 85%;
   }
   #Demo .article hr {
     display: none;
@@ -2037,6 +2063,7 @@
   #Demo .infoSplit p {
     padding-left: 18px;
     color: #aeaeae;
+    font-size: 85%;
   }
   #Demo .pieChart .legend {
     margin-bottom: 1em;
@@ -2067,6 +2094,7 @@
   #Demo .phone .input .txt {
     margin-bottom: 10px;
     font-size: 14px;
+    opacity: 0.6;
   }
   #Demo .phone .input .phoneNumber input {
     width: 80%;
