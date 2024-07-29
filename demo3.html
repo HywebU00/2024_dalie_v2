@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>統計 - chart</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="Demo">
+    <!-- 手機版 search -->
+    <!-- <button class="mobileSearchBtn">開啟搜尋選單</button> -->
+    <!-- <div class="mobileShow">
+      <section class="site-search">
+        <input type="search" id="site-search" name="" placeholder="通報查詢可疑網址/號碼/關鍵字" />
+        <button class="submit">搜尋</button>
+      </section>
+    </div> -->
+    <header>
+      <div class="container">
+        <a href="demo1.html"><h1>數發部打詐通報查詢網</h1></a>
+        <div class="menu">
+          <!-- <img src="images/menu-hot.svg" alt=""> -->
+          <a href="demo1.html"><span class="icon _hot"></span>熱門</a>
+          <a href="demo1.html"><span class="icon _new"></span>最新</a>
+          <a href="demo3.html" class="act"><span class="icon _chart"></span>統計</a>
+          <a href="demo4.html"><span class="icon _member"></span>個人</a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <!-- 進階搜尋 search -->
+        <section class="site-search">
+          <input
+            type="search"
+            id="site-search"
+            name=""
+            placeholder="通報查詢可疑網址/關鍵字"
+          />
+          <button class="submit">搜尋</button>
+        </section>
+        <!-- function 2 -->
+        <section class="function">
+          <div>
+            <div class="drop">
+              <div class="dropOption">
+                <span>通報處理概況</span>
+              </div>
+              <ul class="dropDown">
+                <li>狀況1</li>
+                <li>狀況2</li>
+                <li>狀況3</li>
+              </ul>
+            </div>
+            <div class="drop">
+              <div class="dropOption">
+                <span>過去7天</span>
+              </div>
+              <ul class="dropDown">
+                <li>過去7天</li>
+                <li>過去14天</li>
+                <li>過去30天</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- grid -->
+        <section>
+          <div class="card _narrow">
+            <h4>概況</h4>
+            <section class="infoSplit">
+              <p>通報疑似詐騙訊息總數：<span>56,385則</span></p>
+              <p>確認是詐騙訊息：<span>30,384則</span></p>
+              <p>確認非詐騙訊息：<span>5,001則</span></p>
+              <p>無法判斷或重要性低：<span>4,999則</span></p>
+            </section>
+          </div>
+          <div class="card _narrow">
+            <h4>過去<b>7</b>詐騙樣態比例</h4>
+            <section>
+              <div class="pieChart">
+                <div class="legend">
+                  <section class="infoSplit">
+                    <p><span><em style="background:#F765A3 ;"></em>偽冒公眾人物：</span><span>39,486則</span></p>
+                    <p><span><em style="background:#F4EA5A ;"></em>偽冒政府機構：</span><span>12,088則</span></p>
+                    <p><span><em style="background:#A155B9 ;"></em>私訊詐騙：</span><span>7,657則</span></p>
+                    <p><span><em style="background:#6495ED ;"></em>一頁式詐騙廣告：</span><span>912則</span></p>
+                    <p><span><em style="background:#ECB3CD ;"></em>其他詐騙：</span><span>976則</span></p>
+                </div>
+                <canvas id="pieChart"></canvas>
+              </div>
+            </section>
+          </div>
+          <div class="card _narrow">
+            <h4>詐騙媒介</h4>
+            <section>
+              <div class="pieChart">
+                <div class="legend">
+                  <section class="infoSplit">
+                    <p><span><em style="background:#3077f2 ;"></em>Meta（臉書）：</span><span>39,486則</span></p>
+                    <p><span><em style="background:#39c655 ;"></em>Line：</span><span>12,088則</span></p>
+                    <p><span><em style="background:#f50804 ;"></em>YouTube：</span><span>7,657則</span></p>
+                    <p><span><em style="background:#ea8129 ;"></em>IG：</span><span>912則</span></p>
+                    <p><span><em style="background:#f1d172 ;"></em>一頁式廣告：</span><span>976則</span></p>
+                </div>
+                <canvas id="pieChart2"></canvas>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/customize.js"></script>
+    <script>
+      // 圓餅圖 1
+      new Chart(document.getElementById("pieChart"), {
+        type: "pie",
+        data: {
+          datasets: [
+            {
+              data: [39486, 12088, 7657, 912, 976],
+              backgroundColor: [
+                "#F765A3",
+                "#A155B9",
+                "#F4EA5A",
+                "#6495ED",
+                "#ECB3CD",
+              ],
+              borderWidth: [0, 0, 0, 0, 0],
+              hoverBackgroundColor: [
+                "#F765A3",
+                "#A155B9",
+                "#F4EA5A",
+                "#6495ED",
+                "#ECB3CD",
+              ],
+            },
+          ],
+          labels: [
+            "偽冒公眾人物",
+            "偽冒政府機構",
+            "私訊詐騙",
+            "一頁式詐騙廣告",
+            "其他詐騙",
+          ],
+        },
+        options: {
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+          },
+          legend: {
+            display: false,
+            position: "bottom",
+            labels: {
+              fontColor: "#ffffff",
+              fontSize: 14,
+              padding: 10,
+            },
+          },
+          tooltips: {
+            // enabled: true,
+            displayColors: false,
+          },
+          responsive: true,
+          plugins: {
+            labels: {
+              precision: 1,
+              fontColor: ["#ffffff", "#ffffff", "#222222"],
+              position: "center",
+              fontSize: 18,
+              fontWeight: "Bold",
+            },
+          },
+        },
+      });
+      // 圓餅圖 2
+      new Chart(document.getElementById("pieChart2"), {
+        type: "pie",
+        data: {
+          datasets: [
+            {
+              data: [39486, 12088, 7657, 912, 976],
+              backgroundColor: [
+                "#3077f2",
+                "#39c655",
+                "#f50804",
+                "#ea8129",
+                "#f1d172",
+              ],
+              borderWidth: [0, 0, 0, 0, 0],
+              hoverBackgroundColor: [
+                "#3077f2",
+                "#39c655",
+                "#f50804",
+                "#ea8129",
+                "#f1d172",
+              ],
+            },
+          ],
+          labels: ["Meta（臉書）", "Line", "Youtube", "IG", "一頁式廣告"],
+        },
+        options: {
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+          },
+          legend: {
+            display: false,
+            position: "bottom",
+            labels: {
+              fontColor: "#ffffff",
+              fontSize: 14,
+              padding: 10,
+            },
+          },
+          tooltips: {
+            // enabled: true,
+            displayColors: false,
+          },
+          responsive: true,
+          plugins: {
+            labels: {
+              precision: 1,
+              fontColor: ["#ffffff", "#ffffff", "#222222"],
+              position: "center",
+              fontSize: 18,
+              fontWeight: "Bold",
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

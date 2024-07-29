@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>sample</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 手機版 search -->
+    <button class="mobileSearchBtn">開啟搜尋選單</button>
+    <div class="mobileShow">
+      <section class="site-search">
+        <input type="search" id="site-search" name="" placeholder="通報查詢可疑網址/號碼/關鍵字" />
+        <button class="submit">搜尋</button>
+      </section>
+    </div>
+    <header>
+      <div class="container">
+        <a href="#"><h1>打詐通報查詢網</h1></a>
+        <div class="menu">
+          <!-- <img src="images/menu-hot.svg" alt=""> -->
+          <a href="#" class="act"><span class="icon _hot"></span>熱門</a>
+          <a href="#"><span class="icon _new"></span>最新</a>
+          <a href="#"><span class="icon _chart"></span>統計</a>
+          <a href="#"><span class="icon _member"></span>個人</a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <!-- 進階搜尋 search -->
+        <section class="site-search">
+          <input type="search" id="site-search" name="" placeholder="通報查詢可疑網址/號碼/關鍵字" />
+          <button class="submit">搜尋</button>
+        </section>
+        <hr>
+        <!-- 標題＋tip -->
+        <section class="mainTitle">
+          <h2>可疑網址通報</h2>
+          <p>您所查詢通報的疑似詐騙訊息，之前並未收到，請您協助填寫相關訊息，將盡速處理</p>
+        </section>
+        <hr>
+        <section class="p_shift">
+          <a href="#" class="back">回上一頁</a>
+        </section>
+        <!-- function 1 -->
+        <section class="function">
+          <div>
+            <button class="btn filter">不知名按鈕</button>
+            <div class="tags">
+              <div class="drop">
+                <div class="dropOption">
+                  <span>請選擇（偽select）</span>
+                </div>
+                <ul class="dropDown">
+                  <li>打詐樣態</li>
+                  <li>各平台詐騙下架量</li>
+                  <li>政府各部門詐騙下架量</li>
+                  <li>168反詐騙通報訊息</li>
+                </ul>
+              </div>
+              <!-- <select name="" id="fake-legend">
+                <option value="">下拉選單</option>
+                <option value="">項目1</option>
+                <option value="">項目2</option>
+                <option value="">項目3</option>
+              </select> -->
+              <a href="#" class="act">類型</a>
+              <a href="#">週期</a>
+            </div>
+          </div>
+          <!-- <div>123</div> -->
+        </section>
+        <!-- function 2 -->
+        <section class="function">
+          <div>
+            <div class="drop">
+              <div class="dropOption">
+                <span>請選擇（偽select）</span>
+              </div>
+              <ul class="dropDown">
+                <li>打詐樣態</li>
+                <li>各平台詐騙下架量</li>
+                <li>政府各部門詐騙下架量</li>
+                <li>168反詐騙通報訊息</li>
+              </ul>
+            </div>
+            <!-- <select name="" id="fake-legend">
+              <option value="">打詐樣態</option>
+              <option value="">各平台詐騙下架量</option>
+              <option value="">政府各部門詐騙下架量</option>
+              <option value="">168反詐騙通報訊息</option>
+            </select> -->
+          </div>
+          <div class="tags">
+            <a href="#" class="act">過去7天</a>
+            <a href="#">過去14天</a>
+            <a href="#">過去30天</a>
+          </div>
+        </section>
+        <hr>
+        <!-- 按鈕 -->
+        <section class="btnGrp">
+          <button class="btn">閱讀全文</button>
+          <button class="btn submit">submit</button>
+          <button class="btn normal">normal</button>
+        </section>
+        <hr>
+        <!-- 表單 -->
+        <form action="">
+          <div class="formGrp">
+            <label for="" class="title" aria-required="true"><abbr class="necessary" title="為必填(選)欄位,不能為空白。">必填</abbr>input：</label>
+            <div class="content">
+              <input type="text" id="fake-legend" placeholder="請輸入文字">
+            </div>
+          </div>
+          <div class="formGrp">
+            <label for="" class="title" aria-required="true">input 手機號碼：</label>
+            <div class="content">
+              <input name="phone" id="phone" type="tel" placeholder="手機格式 0912345678">
+              <button class="btn normal">發送OTP驗證碼</button>
+            </div>
+          </div>
+          <div class="formGrp">
+            <label for="" class="title" aria-required="true">select：</label>
+            <div class="content">
+              <select name="" id="fake-legend">
+                <option value="">台北市</option>
+                <option value="">新北市</option>
+                <option value="">桃園市</option>
+                <option value="">新竹市</option>
+                <option value="">...</option>
+              </select>
+            </div>
+          </div>
+          <div class="formGrp">
+            <label for="" class="title" aria-required="true">radio：</label>
+            <div class="content">
+              <div class="radioGrp">
+                <label><input type="radio" name="sampleRadio" value="" checked="">新北市</label>
+                <label><input type="radio" name="sampleRadio" value="">臺北市</label>
+                <label><input type="radio" name="sampleRadio" value="">臺中市</label>
+                <label><input type="radio" name="sampleRadio" value="">臺南市</label>
+                <label><input type="radio" name="sampleRadio" value="">高雄市</label>
+                <label><input type="radio" name="sampleRadio" value="">宜蘭縣</label>
+                <label><input type="radio" name="sampleRadio" value="">新竹縣</label>
+              </div>
+            </div>
+          </div>
+          <div class="formGrp">
+            <label for="" class="title" aria-required="true">checkbox：</label>
+            <div class="content">
+              <div class="checkGrp">
+                <label><input type="checkbox" name="" value="" checked="">全部</label>
+                <label><input type="checkbox" name="" value="">展覽</label>
+                <label><input type="checkbox" name="" value="">表演與節慶</label>
+                <label><input type="checkbox" name="" value="">演講／講座／研討會</label>
+                <label><input type="checkbox" name="" value="">綜合</label>
+              </div>
+            </div>
+          </div>
+          <section class="btnGrp">
+            <button class="btn submit">送出通報</button>
+          </section>
+        </form>
+        <hr>
+        <!-- 使用者 -->
+        <section class="user">
+          <h3 class="phoneNum">0910 XXX 689<a href="#" class="icon _setting">使用者設定</a></h3>
+          <div class="tip">防詐新秀 LV.5</div>
+        </section>
+        <hr>
+        <!-- grid -->
+        <section class="col_2">
+          <div class="col card _narrow">
+            <h4>詐騙形式</h4>
+            <section>
+              <div class="pieChart">
+                <canvas id="pieChart"></canvas>
+              </div>
+            </section>
+          </div>
+          <div class="col card _narrow">
+            <h4>您的逐月案件通報數</h4>
+            <section>
+              <div class="lineChart">
+                <canvas id="line-chart"></canvas>
+              </div>
+            </section>
+          </div>
+          <div class="col card _narrow">
+            <h4>過去<b>7</b>天確認詐騙數 / 詐騙通報總數</h4>
+            <p class="data"><span>85.0%</span><b><span>10,103</span> / <span>11,886</span></b></p>
+          </div>
+          <div class="col card _narrow">
+            <h4>過去<b>7</b>天各類型詐騙通報比例</h4>
+            <p class="data"><b><span>918,882</span></b></p>
+          </div>
+        </section>
+        <section class="col_3">
+          <div class="col card _narrow inline">
+            <h4>通報數</h4>
+            <b>1000</b>
+          </div>
+          <div class="col card _narrow inline">
+            <h4>下架數</h4>
+            <b>722</b>
+          </div>
+          <div class="col card _narrow inline">
+            <h4>下架率</h4>
+            <b>72/2%</b>
+          </div>
+        </section>
+        <section class="col_3">
+          <div class="col card _mixed">
+            <div class="flexible">
+              <h4>各部會</h4>
+              <span class="state">所費時間</span>
+            </div>
+            <p class="data"><span>85.0%</span><b><span>10,103</span> / <span>11,886</span></b></p>
+          </div>
+          <div class="col card _mixed">
+            <div class="flexible">
+              <h4>各部會</h4>
+              <span>105 mins</span>
+            </div>
+            <p class="data"><b><span>確認詐騙數</span> / 詐騙通報總數</b></p>
+          </div>
+        </section>
+        <hr>
+        <!-- 查詢結果 -->
+        <section class="col_48">
+          <div class="col">
+            <div class="card">
+              <div class="flexible">
+                <div class="dataDefine">
+                  <span class="num">No.01</span>
+                </div>
+                <div class="function">
+                  <button class="share">分享</button>
+                  <section class="socialMedia">
+                    <a href="#"><img src="images/s_Facebook.png" alt=""></a>
+                    <a href="#"><img src="images/s_X.png" alt=""></li></a>
+                    <a href="#"><img src="images/s_Line.png" alt=""></a>
+                  </section>
+                  <button class="duplicate">複製</button>
+                </div>
+              </div>
+              <div class="col_48">
+                <div class="col foto">
+                  <img src="images/icon_celebrity.png" alt="">
+                </div>
+                <div class="col info">
+                  <ul>
+                    <li>詐騙形式：疑似僞冒名人賬號</li>
+                    <li>通報次數：<span>987</span>人</li>
+                    <li>詐騙手法：付費廣告</li>
+                    <li>處理進度：已下架</li>
+                    <li>詐騙來源：<img src="images/s_Facebook.png" alt="">
+                        <img src="images/s_Instagram.png" alt="">
+                        <img src="images/s_Line.png" alt="">
+                        <img src="images/s_Tiktok.png" alt="">
+                        <img src="images/s_Web.png" alt="">
+                        <img src="images/s_Youtube.png" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="flexible">
+                <a href="#">https://www.facebook.com/permalink.php?story_fbid=pfbid02v42bzgswKmBuNRiZr5PsRNf6KP1MX2BYPo3nVXzGwHquWZYEnQnpV2YgwHMBchzMl&id=100064732269013</a>
+                <!-- <div class="frequency">987人</div> -->
+              </div>
+            </div>
+            <!-- demo -->
+            <div class="card _demo">
+              <div class="col_48">
+                <div class="col foto">
+                  <img src="images/demopic.png" alt="">
+                </div>
+                <div class="col info">
+                  <div class="flexible visible">
+                    <div class="dataDefine">
+                      <img src="images/s_Facebook.png" alt="">
+                      <!-- <img src="images/s_Instagram.png" alt="">
+                      <img src="images/s_Line.png" alt="">
+                      <img src="images/s_Tiktok.png" alt="">
+                      <img src="images/s_Web.png" alt="">
+                      <img src="images/s_Youtube.png" alt=""> -->
+                      <div class="frequency">987人</div>
+                    </div>
+                    <span class="red">詐騙訊息。已通知臉書移除</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 處理進度 -->
+            <div class="article">
+              <h3>網址</h3>
+              <ul>
+                <li>https://www.facebook.com/permalink.php?story_fbid=pfb</li>
+              </ul>
+              <h3>處理進度</h3>
+              <ul>
+                <li><time datetime="">2024/05/21&nbsp;18:42</time>接獲通報</li>
+                <li><time datetime="">2024/05/21&nbsp;18:42</time>接獲通報接獲通報接獲通報接獲通報</li>
+                <li><time datetime="">2024/05/21&nbsp;18:42</time>接獲通報</li>
+                <li><time datetime="">2024/05/21&nbsp;18:42</time>接獲通報</li>
+                <li><time datetime="">2024/05/21&nbsp;18:42</time>接獲通報</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="article">
+              <hr>
+              <h3>內容摘要</h3>
+              <div class="mask">
+                <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷史分開讀，例如讀到乾隆皇帝，我們不知道法國國王是誰？也不知道英國是哪個皇帝？1624年荷蘭人到台南，1626西班牙人來到基隆，建立聖蕯爾瓦多城。<br>歐洲人東來，與1600年東印度公司成立有關，之前是1588年英格蘭打敗西班牙的無敵艦隊，歐洲的英國、法國、荷蘭、西班牙競逐海外殖民地，進入大航海時代，台灣在大航海時代，已經和世界接軌了。<br>這次到印度，我對泰姬馬哈陵及紅堡印象深刻。這是在印度的蒙兀兒帝國時代（Mughal Empire)建立的，泰姬馬哈陵在1632到1648年之間，紅堡是在1639到1948，建立這兩座建築物的是第五代君主沙迦罕，後來他透支國力太大，被次子奧朗則布囚禁。看印度紅堡，很像紫禁城的故宮。<br>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷史分開讀，例如讀到乾隆皇帝，我們不知道法國國王是誰？也不知道英國是哪個皇帝？1624年荷蘭人到台南，1626西班牙人來到基隆，建立聖蕯爾瓦多城。<br>歐洲人東來，與1600年東印度公司成立有關，之前是1588年英格蘭打敗西班牙的無敵艦隊，歐洲的英國、法國、荷蘭、西班牙競逐海外殖民地，進入大航海時代，台灣在大航海時代，已經和世界接軌了。<br>這次到印度，我對泰姬馬哈陵及紅堡印象深刻。這是在印度的蒙兀兒帝國時代（Mughal Empire)建立的，泰姬馬哈陵在1632到1648年之間，紅堡是在1639到1948，建立這兩座建築物的是第五代君主沙迦罕，後來他透支國力太大，被次子奧朗則布囚禁。看印度紅堡，很像紫禁城的故宮。</p>
+                <button class="btn">閱讀全文</button>
+              </div>
+            </div>
+            <hr>
+            <div class="article">
+              <h3>類似詐騙新聞：</h3>
+              <ol>
+                <li><a href="#">是詐騙！辜仲諒遭冒名開臉書粉專、LINE投資群組 公司發聲明</a></li>
+                <li><a href="#">是詐騙！辜仲諒遭冒名開臉書粉專、LINE投資群組 公司發聲明</a></li>
+                <li><a href="#">是詐騙！辜仲諒遭冒名開臉書粉專、LINE投資群組 公司發聲明</a></li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <!-- cards demo -->
+        <section class="col_3">
+          <div class="col card _demo">
+            <a href="#">
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_celebrity.png" alt="">
+                </div>
+                <div class="col info">
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                  </div>
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible visible">
+                    <div class="dataDefine">
+                      <img src="images/s_Facebook.png" alt="">
+                      <!-- <img src="images/s_Instagram.png" alt="">
+                      <img src="images/s_Line.png" alt="">
+                      <img src="images/s_Tiktok.png" alt="">
+                      <img src="images/s_Web.png" alt="">
+                      <img src="images/s_Youtube.png" alt=""> -->
+                      <div class="frequency">987人</div>
+                    </div>
+                    <span class="red">詐騙訊息。已通知臉書移除</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card _demo">
+            <a href="#">
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_pm.png" alt="">
+                </div>
+                <div class="col info">
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                  </div>
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible visible">
+                    <div class="dataDefine">
+                      <img src="images/s_Facebook.png" alt="">
+                      <!-- <img src="images/s_Instagram.png" alt="">
+                      <img src="images/s_Line.png" alt="">
+                      <img src="images/s_Tiktok.png" alt="">
+                      <img src="images/s_Web.png" alt="">
+                      <img src="images/s_Youtube.png" alt=""> -->
+                      <div class="frequency">987人</div>
+                    </div>
+                    <span class="yellow">已通知謝金河本人。確認中</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card _demo">
+            <a href="#">
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_GOV.png" alt="">
+                </div>
+                <div class="col info">
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                  </div>
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible visible">
+                    <div class="dataDefine">
+                      <img src="images/s_Facebook.png" alt="">
+                      <!-- <img src="images/s_Instagram.png" alt="">
+                      <img src="images/s_Line.png" alt="">
+                      <img src="images/s_Tiktok.png" alt="">
+                      <img src="images/s_Web.png" alt="">
+                      <img src="images/s_Youtube.png" alt=""> -->
+                      <div class="frequency">987人</div>
+                    </div>
+                    <span class="green">並非詐騙訊息</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card _demo">
+            <a href="#">
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_web.png" alt="">
+                </div>
+                <div class="col info">
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                  </div>
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible visible">
+                    <div class="dataDefine">
+                      <img src="images/s_Facebook.png" alt="">
+                      <!-- <img src="images/s_Instagram.png" alt="">
+                      <img src="images/s_Line.png" alt="">
+                      <img src="images/s_Tiktok.png" alt="">
+                      <img src="images/s_Web.png" alt="">
+                      <img src="images/s_Youtube.png" alt=""> -->
+                      <div class="frequency">987人</div>
+                    </div>
+                    <span class="green">並非詐騙訊息</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card _demo">
+            <a href="#">
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_else.png" alt="">
+                </div>
+                <div class="col info">
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                  </div>
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible visible">
+                    <div class="dataDefine">
+                      <img src="images/s_Facebook.png" alt="">
+                      <!-- <img src="images/s_Instagram.png" alt="">
+                      <img src="images/s_Line.png" alt="">
+                      <img src="images/s_Tiktok.png" alt="">
+                      <img src="images/s_Web.png" alt="">
+                      <img src="images/s_Youtube.png" alt=""> -->
+                      <div class="frequency">987人</div>
+                    </div>
+                    <span class="green">並非詐騙訊息</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card _demo">
+            <a href="#">
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/demopic.png" alt="">
+                </div>
+                <div class="col info">
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                  </div>
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible visible">
+                    <div class="dataDefine">
+                      <img src="images/s_Facebook.png" alt="">
+                      <!-- <img src="images/s_Instagram.png" alt="">
+                      <img src="images/s_Line.png" alt="">
+                      <img src="images/s_Tiktok.png" alt="">
+                      <img src="images/s_Web.png" alt="">
+                      <img src="images/s_Youtube.png" alt=""> -->
+                      <div class="frequency">987人</div>
+                    </div>
+                    <span class="green">並非詐騙訊息</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+        <hr>
+        <!-- cards -->
+        <section class="col_3">
+          <div class="col card">
+            <a href="#">
+              <div class="flexible">
+                <div class="dataDefine">
+                  <span class="num">No.1</span>
+                  <img src="images/s_Facebook.png" alt="">
+                  <img src="images/s_Instagram.png" alt="">
+                  <img src="images/s_Line.png" alt="">
+                  <img src="images/s_Tiktok.png" alt="">
+                  <img src="images/s_Web.png" alt="">
+                  <img src="images/s_Youtube.png" alt="">
+                </div>
+                <span class="state red">已下架</span>
+              </div>
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_celebrity.png" alt="">
+                </div>
+                <div class="col info">
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                    <div class="frequency">987人</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card">
+            <a href="#">
+              <div class="flexible">
+                <div class="dataDefine">
+                  <span class="num">No.2</span>
+                  <img src="images/s_Facebook.png" alt="">
+                </div>
+                <span class="state yellow">已通知本人</span>
+              </div>
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_pm.png" alt="">
+                </div>
+                <div class="col info">
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                    <div class="frequency">987人</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card">
+            <a href="#">
+              <div class="flexible">
+                <div class="dataDefine">
+                  <span class="num">No.3</span>
+                  <img src="images/s_Facebook.png" alt="">
+                </div>
+                <span class="state green">已通知本人</span>
+              </div>
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_GOV.png" alt="">
+                </div>
+                <div class="col info">
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                    <div class="frequency">987人</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card">
+            <a href="#">
+              <div class="flexible">
+                <div class="dataDefine">
+                  <span class="num">No.4</span>
+                  <img src="images/s_Facebook.png" alt="">
+                </div>
+                <span class="state">已下架</span>
+              </div>
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_web.png" alt="">
+                </div>
+                <div class="col info">
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                    <div class="frequency">987人</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card">
+            <a href="#">
+              <div class="flexible">
+                <div class="dataDefine">
+                  <span class="num">No.5</span>
+                  <img src="images/s_Facebook.png" alt="">
+                </div>
+                <span class="state">已下架</span>
+              </div>
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_else.png" alt="">
+                </div>
+                <div class="col info">
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                    <div class="frequency">987人</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col card">
+            <a href="#">
+              <div class="flexible">
+                <div class="dataDefine">
+                  <span class="num">No.6</span>
+                  <img src="images/s_Facebook.png" alt="">
+                </div>
+                <span class="state">已下架</span>
+              </div>
+              <div class="col_39">
+                <div class="col foto">
+                  <img src="images/icon_celebrity.png" alt="">
+                </div>
+                <div class="col info">
+                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <div class="flexible">
+                    <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
+                    <div class="frequency">987人</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- 資料讀取中 -->
+        <section class="loading">
+          <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+              <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+          </svg>
+          資料讀取中...
+        </section>
+      </div>
+    </div>
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/customize.js"></script>
+    <script>
+      // 圓餅圖
+      new Chart(document.getElementById('pieChart'), {
+        type: 'pie',
+        data: {
+          datasets: [{
+            data: [25, 25, 50],
+            backgroundColor: ['#F765A3', '#A155B9', '#F4EA5A'],
+            borderWidth: [0, 0, 0],
+            hoverBackgroundColor: ['#F765A3', '#A155B9', '#F4EA5A']
+          }],
+          labels: [
+            '購物詐騙', '偽冒政府訊息', '名人詐騙'
+          ]
+        },
+        options: {
+          animation: {
+            animateRotate: true,
+            animateScale: true
+          },
+          legend: {
+            display: true,
+            position:'bottom',
+            labels: {
+              fontColor: '#ffffff',
+              fontSize: 16,
+              padding: 16
+            }
+          },
+          tooltips: {
+            // enabled: true,
+            displayColors: false
+          },
+          responsive: true,
+          plugins: {
+            labels: {
+              precision: 1,
+              fontColor: ['#ffffff', '#ffffff', '#222222'],
+              position: 'center',
+              fontSize: 18,
+              fontWeight:'Bold'
+            }
+          }
+        }
+      })
+      // 線條圖
+      new Chart(document.getElementById("line-chart"), {
+        type: "line",
+        data: {
+          labels: [01, 02, 03, 04, 05, 06, 07, 08],
+          datasets: [
+            {
+              data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210],
+              label: "過去8週",
+              borderColor: "#F4EA5A",
+              backgroundColor: "#F4EA5A",
+              pointRadius: 4,
+              pointHoverRadius:4,
+              fill: false
+            },
+            {
+              data: [2820, 3500, 1200, 5020, 6350, 5090, 7470, 1402],
+              label: "前一期",
+              borderColor: "#f35588",
+              backgroundColor: "#f35588",
+              pointRadius: 4,
+              pointHoverRadius:4,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          // layout: {
+          //   padding: {
+          //     left: 20,
+          //     right: 20,
+          //     top: 20,
+          //     bottom: 20
+          //   }
+          // },
+          elements: {
+              line: {
+                  tension: 0
+              }
+          },
+          label: {},
+          legend: {
+            display: true,
+            position: "bottom",
+            labels: {
+              // boxWidth: 50,
+              fontSize: 16,
+              fontColor: "#ffffff",
+              fontStyle: "normal",
+              padding: 16
+            }
+          },
+          tooltips: {
+            // mode: "point",
+            // backgroundColor: "rgba(0, 98, 90, 1)",
+            // fontColor: "#222222",
+            // yPadding: 10,
+            // xPadding: 50,
+            // titleAlign: "center",
+            // bodyAlign: "center",
+            displayColors: false
+          },
+          scales: {
+            xAxes: [
+              {
+                ticks: {
+                  // Include a dollar sign in the ticks
+                  // callback: function (value, index, values) {
+                  //   return value;
+                  // },
+                  fontSize: 14,
+                  fontColor: "#ffffff"
+                },
+                gridLines:{
+                  color:"#4f4f4f",
+                  zeroLineColor:"#4f4f4f"
+                }
+              }
+            ],
+            yAxes: [
+              {
+                ticks: {
+                  // Include a dollar sign in the ticks
+                  // callback: function (value, index, values) {
+                  //   return value + " $";
+                  // },
+                  fontSize: 14,
+                  fontColor: "#ffffff"
+                },
+                gridLines:{
+                  color:"#4f4f4f",
+                  zeroLineColor:"#4f4f4f"
+                }
+              }
+            ]
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

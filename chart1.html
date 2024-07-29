@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="robots" content="noindex" />
+    <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>個人資料 chart</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 手機版 search -->
+    <button class="mobileSearchBtn">開啟搜尋選單</button>
+    <div class="mobileShow">
+      <section class="site-search">
+        <input type="search" id="site-search" name="" placeholder="通報查詢可疑網址/號碼/關鍵字" />
+        <button class="submit">搜尋</button>
+      </section>
+    </div>
+    <header>
+      <div class="container">
+        <a href="#"><h1>打詐通報查詢網</h1></a>
+        <div class="menu">
+          <!-- <img src="images/menu-hot.svg" alt=""> -->
+          <a href="#"><span class="icon _hot"></span>熱門</a>
+          <a href="#"><span class="icon _new"></span>最新</a>
+          <a href="#"><span class="icon _chart"></span>統計</a>
+          <a href="#" class="act"><span class="icon _member"></span>個人</a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+        <!-- 使用者 -->
+        <section class="user">
+          <h3 class="phoneNum">0910 XXX 689</h3>
+          <div class="tip">
+            您的通報是打擊詐騙的重要力量，幫助我們及時掌握詐騙手法，並將其納入警示資訊，守護民眾的財產安全。讓我們共同努力，防範詐騙，共建安全網絡！(此段文字會由API提供)
+          </div>
+        </section>
+        <!--  -->
+        <section class="col_3">
+          <div class="col card _narrow inline">
+            <h4>累計通報數</h4>
+            <b>1000</b>
+          </div>
+          <div class="col card _narrow inline">
+            <h4>下架數</h4>
+            <b>722</b>
+          </div>
+          <div class="col card _narrow inline">
+            <h4>下架率</h4>
+            <b>72/2%</b>
+          </div>
+        </section>
+        <!-- grid -->
+        <!-- <section class="col_2">
+          <div class="col card _narrow">
+            <h4>詐騙形式</h4>
+            <section>
+              <div class="pieChart">
+                <canvas id="pieChart"></canvas>
+              </div>
+            </section>
+          </div>
+          <div class="col card _narrow">
+            <h4>您的逐月案件通報數</h4>
+            <section>
+              <div class="lineChart">
+                <canvas id="line-chart"></canvas>
+              </div>
+            </section>
+          </div>
+        </section> -->
+      </div>
+    </div>
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/customize.js"></script>
+    <script>
+      // 圓餅圖
+      new Chart(document.getElementById('pieChart'), {
+        type: 'pie',
+        data: {
+          datasets: [{
+            data: [25, 25, 50],
+            backgroundColor: ['#F765A3', '#A155B9', '#F4EA5A'],
+            borderWidth: [0, 0, 0],
+            hoverBackgroundColor: ['#F765A3', '#A155B9', '#F4EA5A']
+          }],
+          labels: [
+            '購物詐騙', '偽冒政府訊息', '名人詐騙'
+          ]
+        },
+        options: {
+          animation: {
+            animateRotate: true,
+            animateScale: true
+          },
+          legend: {
+            display: true,
+            position:'bottom',
+            labels: {
+              fontColor: '#ffffff',
+              fontSize: 16,
+              padding: 16
+            }
+          },
+          tooltips: {
+            // enabled: true,
+            displayColors: false
+          },
+          responsive: true,
+          plugins: {
+            labels: {
+              precision: 1,
+              fontColor: ['#ffffff', '#ffffff', '#222222'],
+              position: 'center',
+              fontSize: 18,
+              fontWeight:'Bold'
+            }
+          }
+        }
+      })
+      // 線條圖
+      new Chart(document.getElementById("line-chart"), {
+        type: "line",
+        data: {
+          labels: [01, 02, 03, 04, 05, 06, 07, 08],
+          datasets: [
+            {
+              data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210],
+              label: "過去8週",
+              borderColor: "#F4EA5A",
+              backgroundColor: "#F4EA5A",
+              pointRadius: 4,
+              pointHoverRadius:4,
+              fill: false
+            },
+            {
+              data: [2820, 3500, 1200, 5020, 6350, 5090, 7470, 1402],
+              label: "前一期",
+              borderColor: "#f35588",
+              backgroundColor: "#f35588",
+              pointRadius: 4,
+              pointHoverRadius:4,
+              fill: false
+            }
+          ]
+        },
+        options: {
+          // layout: {
+          //   padding: {
+          //     left: 20,
+          //     right: 20,
+          //     top: 20,
+          //     bottom: 20
+          //   }
+          // },
+          elements: {
+              line: {
+                  tension: 0
+              }
+          },
+          label: {},
+          legend: {
+            display: true,
+            position: "bottom",
+            labels: {
+              // boxWidth: 50,
+              fontSize: 16,
+              fontColor: "#ffffff",
+              fontStyle: "normal",
+              padding: 16
+            }
+          },
+          tooltips: {
+            // mode: "point",
+            // backgroundColor: "rgba(0, 98, 90, 1)",
+            // fontColor: "#222222",
+            // yPadding: 10,
+            // xPadding: 50,
+            // titleAlign: "center",
+            // bodyAlign: "center",
+            displayColors: false
+          },
+          scales: {
+            xAxes: [
+              {
+                ticks: {
+                  // Include a dollar sign in the ticks
+                  // callback: function (value, index, values) {
+                  //   return value;
+                  // },
+                  fontSize: 14,
+                  fontColor: "#ffffff"
+                },
+                gridLines:{
+                  color:"#4f4f4f",
+                  zeroLineColor:"#4f4f4f"
+                }
+              }
+            ],
+            yAxes: [
+              {
+                ticks: {
+                  // Include a dollar sign in the ticks
+                  // callback: function (value, index, values) {
+                  //   return value + " $";
+                  // },
+                  fontSize: 14,
+                  fontColor: "#ffffff"
+                },
+                gridLines:{
+                  color:"#4f4f4f",
+                  zeroLineColor:"#4f4f4f"
+                }
+              }
+            ]
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

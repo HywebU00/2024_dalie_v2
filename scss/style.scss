@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@layer webScss {
+  @import '_variable';          //變數
+  @import 'common/_mixin';      //客製MIXIN
+  @import 'common/_normalize';  //reset
+  @import 'common/_notice';     //提示
+  // page
+  @import 'page/_main';         //樣式
+}
+
