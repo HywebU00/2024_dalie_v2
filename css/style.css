@@ -2031,7 +2031,7 @@
   }
   #Demo .infoSplit p {
     padding-left: 18px;
-    opacity: 0.6;
+    color: #aeaeae;
   }
   #Demo .pieChart .legend {
     margin-bottom: 1em;
