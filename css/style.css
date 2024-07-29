@@ -1975,6 +1975,9 @@
     font-size: 85%;
     line-height: 100%;
   }
+  #Demo .card._demo .col_39 {
+    margin: 0px 4px 2px 4px;
+  }
   #Demo .card._demo .col_39 > .col:first-child {
     min-width: 75px;
     max-width: 75px;
