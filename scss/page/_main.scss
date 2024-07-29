@@ -1752,6 +1752,11 @@ $duration: 1.4s;
       border: 0;
     }
   }
+  .red,
+  .green,
+  .yellow {
+    font-weight: normal;
+  }
   .card {
     margin: 6px 0 8px 0;
     &:first-child {
@@ -1886,8 +1891,15 @@ $duration: 1.4s;
         li {
           display: flex;
           justify-content: space-between;
+          a {
+            color: #2a96f9;
+            text-decoration: underline;
+          }
         }
       }
     }
+  }
+  .btn.submit {
+    background: #2a96f9;
   }
 }

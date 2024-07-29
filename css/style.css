@@ -1965,6 +1965,11 @@
   #Demo .site-search input {
     border: 0;
   }
+  #Demo .red,
+  #Demo .green,
+  #Demo .yellow {
+    font-weight: normal;
+  }
   #Demo .card {
     margin: 6px 0 8px 0;
   }
@@ -2097,5 +2102,12 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  #Demo .info .article ul li a {
+    color: #2a96f9;
+    text-decoration: underline;
+  }
+  #Demo .btn.submit {
+    background: #2a96f9;
   }
 }/*# sourceMappingURL=style.css.map */
