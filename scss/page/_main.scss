@@ -557,7 +557,7 @@ header {
 #innerType{
   header{
     h1{
-      background: url(../images/icon-back-w.svg) 10px 10px no-repeat;
+      background: url(../images/icon-back-w.svg) 10px 50% no-repeat;
       background-size: 8%;
       padding-left: 65px;
       align-items: center;
@@ -1177,11 +1177,13 @@ $imgWH: 60px;
     }
     @media (max-width: $screenSm) {
       // background: pink;
+      margin: 0 0 8px 0;
       &._thin{
         padding: 6px 4px;
       }
       .col_39 {
         margin: 0px 4px 2px 4px;
+        padding: 2px 0;
         align-items: flex-end;
       }
       .info{
