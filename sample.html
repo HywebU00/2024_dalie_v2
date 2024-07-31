@@ -12,21 +12,21 @@
   </head>
   <body>
     <!-- 手機版 search -->
-    <button class="mobileSearchBtn">開啟搜尋選單</button>
+    <!-- <button class="mobileSearchBtn">開啟搜尋選單</button>
     <div class="mobileShow">
       <section class="site-search">
         <input type="search" id="site-search" name="" placeholder="通報查詢可疑網址/號碼/關鍵字" />
         <button class="submit">搜尋</button>
       </section>
-    </div>
+    </div> -->
     <header>
       <div class="container">
-        <a href="#"><h1>打詐通報查詢網</h1></a>
+        <a href="#"><h1>數發部打詐通報查詢網</h1></a>
         <div class="menu">
           <!-- <img src="images/menu-hot.svg" alt=""> -->
-          <a href="#" class="act"><span class="icon _hot"></span>熱門</a>
-          <a href="#"><span class="icon _new"></span>最新</a>
-          <a href="#"><span class="icon _chart"></span>統計</a>
+          <a href="cards.html" class="act"><span class="icon _hot"></span>熱門</a>
+          <a href="cards-2.html"><span class="icon _new"></span>最新</a>
+          <a href="chart2.html"><span class="icon _chart"></span>統計</a>
           <a href="#"><span class="icon _member"></span>個人</a>
         </div>
       </div>
@@ -35,7 +35,7 @@
       <div class="container">
         <!-- 進階搜尋 search -->
         <section class="site-search">
-          <input type="search" id="site-search" name="" placeholder="通報查詢可疑網址/號碼/關鍵字" />
+          <input type="search" id="site-search" name="" placeholder="請輸入可疑網址或可疑訊息" />
           <button class="submit">搜尋</button>
         </section>
         <hr>
@@ -101,6 +101,33 @@
             <a href="#" class="act">過去7天</a>
             <a href="#">過去14天</a>
             <a href="#">過去30天</a>
+          </div>
+        </section>
+        <!-- function 3 -->
+        <section class="function _equal">
+          <div>
+            <div class="drop">
+              <div class="dropOption">
+                <span>通報處理概況</span>
+              </div>
+              <ul class="dropDown">
+                <li>狀況1</li>
+                <li>狀況2</li>
+                <li>狀況3</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="drop">
+              <div class="dropOption">
+                <span>過去7天</span>
+              </div>
+              <ul class="dropDown">
+                <li>過去7天</li>
+                <li>過去14天</li>
+                <li>過去30天</li>
+              </ul>
+            </div>
           </div>
         </section>
         <hr>
@@ -176,12 +203,47 @@
         </section>
         <hr>
         <!-- grid -->
+        <section>
+          <div class="card _narrow">
+            <h4>概況</h4>
+            <section class="infoSplit">
+              <p>通報疑似詐騙訊息總數：<span>56,385則</span></p>
+              <p>確認是詐騙訊息：<span>30,384則</span></p>
+              <p>確認非詐騙訊息：<span>5,001則</span></p>
+              <p>無法判斷或重要性低：<span>4,999則</span></p>
+            </section>
+          </div>
+        </section>
         <section class="col_2">
           <div class="col card _narrow">
-            <h4>詐騙形式</h4>
+            <h4>過去<b>7</b>詐騙樣態比例</h4>
             <section>
               <div class="pieChart">
+                <div class="legend">
+                  <section class="infoSplit">
+                    <p><span><em style="background:#F765A3 ;"></em>偽冒公眾人物：</span><span>39,486則</span></p>
+                    <p><span><em style="background:#F4EA5A ;"></em>偽冒政府機構：</span><span>12,088則</span></p>
+                    <p><span><em style="background:#A155B9 ;"></em>私訊詐騙：</span><span>7,657則</span></p>
+                    <p><span><em style="background:#6495ED ;"></em>一頁式詐騙廣告：</span><span>912則</span></p>
+                    <p><span><em style="background:#ECB3CD ;"></em>其他詐騙：</span><span>976則</span></p>
+                </div>
                 <canvas id="pieChart"></canvas>
+              </div>
+            </section>
+          </div>
+          <div class="col card _narrow">
+            <h4>詐騙媒介</h4>
+            <section>
+              <div class="pieChart">
+                <div class="legend">
+                  <section class="infoSplit">
+                    <p><span><em style="background:#3077f2 ;"></em>Meta：</span><span>39,486則</span></p>
+                    <p><span><em style="background:#39c655 ;"></em>LINE：</span><span>12,088則</span></p>
+                    <p><span><em style="background:#f50804 ;"></em>Google/YouTube：</span><span>7,657則</span></p>
+                    <p><span><em style="background:#ea8129 ;"></em>IG：</span><span>912則</span></p>
+                    <p><span><em style="background:#f1d172 ;"></em>一頁式廣告：</span><span>976則</span></p>
+                </div>
+                <canvas id="pieChart2"></canvas>
               </div>
             </section>
           </div>
@@ -276,8 +338,8 @@
               </div>
             </div>
             <!-- demo -->
-            <div class="card _demo">
-              <div class="col_48">
+            <div class="card _demo _thin">
+              <div class="col_39">
                 <div class="col foto">
                   <img src="images/demopic.png" alt="">
                 </div>
@@ -299,10 +361,12 @@
             </div>
             <!-- 處理進度 -->
             <div class="article">
-              <h3>網址</h3>
+              <h3>網址：</h3>
               <ul>
                 <li>https://www.facebook.com/permalink.php?story_fbid=pfb</li>
               </ul>
+              <h3>內容摘要：</h3>
+              <p>歡迎加入，提前布局，獲得第一手盈利策略最近詐騙分子層出不窮，所以我建立了新的股票交流社群以供大家参考。歡迎加入，提前布局，獲得第一手盈利策略最近詐騙分子層出不窮，所以我建立了新的股票交流社群以供大家参考。歡迎加入，提前布局，獲得第一手盈利策略最近詐騙分子層出不窮，所以我建立了新的股票交流社群以供大家参考。</p>
               <h3>處理進度</h3>
               <ul>
                 <li><time datetime="">2024/05/21&nbsp;18:42</time>接獲通報</li>
@@ -315,7 +379,6 @@
           </div>
           <div class="col">
             <div class="article">
-              <hr>
               <h3>內容摘要</h3>
               <div class="mask">
                 <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷史分開讀，例如讀到乾隆皇帝，我們不知道法國國王是誰？也不知道英國是哪個皇帝？1624年荷蘭人到台南，1626西班牙人來到基隆，建立聖蕯爾瓦多城。<br>歐洲人東來，與1600年東印度公司成立有關，之前是1588年英格蘭打敗西班牙的無敵艦隊，歐洲的英國、法國、荷蘭、西班牙競逐海外殖民地，進入大航海時代，台灣在大航海時代，已經和世界接軌了。<br>這次到印度，我對泰姬馬哈陵及紅堡印象深刻。這是在印度的蒙兀兒帝國時代（Mughal Empire)建立的，泰姬馬哈陵在1632到1648年之間，紅堡是在1639到1948，建立這兩座建築物的是第五代君主沙迦罕，後來他透支國力太大，被次子奧朗則布囚禁。看印度紅堡，很像紫禁城的故宮。<br>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷史分開讀，例如讀到乾隆皇帝，我們不知道法國國王是誰？也不知道英國是哪個皇帝？1624年荷蘭人到台南，1626西班牙人來到基隆，建立聖蕯爾瓦多城。<br>歐洲人東來，與1600年東印度公司成立有關，之前是1588年英格蘭打敗西班牙的無敵艦隊，歐洲的英國、法國、荷蘭、西班牙競逐海外殖民地，進入大航海時代，台灣在大航海時代，已經和世界接軌了。<br>這次到印度，我對泰姬馬哈陵及紅堡印象深刻。這是在印度的蒙兀兒帝國時代（Mughal Empire)建立的，泰姬馬哈陵在1632到1648年之間，紅堡是在1639到1948，建立這兩座建築物的是第五代君主沙迦罕，後來他透支國力太大，被次子奧朗則布囚禁。看印度紅堡，很像紫禁城的故宮。</p>
@@ -340,13 +403,13 @@
             <a href="#">
               <div class="col_39">
                 <div class="col foto">
-                  <img src="images/icon_celebrity.png" alt="">
+                  <img src="images/demo/d_1.jpg" alt="">
                 </div>
                 <div class="col info">
                   <div class="flexible">
                     <span>https://www.facebook.com/permalink.php?story_fbid=pfb</span>
                   </div>
-                  <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷....................</p>
+                  <p>一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十</p>
                   <div class="flexible visible">
                     <div class="dataDefine">
                       <img src="images/s_Facebook.png" alt="">
@@ -355,7 +418,7 @@
                       <img src="images/s_Tiktok.png" alt="">
                       <img src="images/s_Web.png" alt="">
                       <img src="images/s_Youtube.png" alt=""> -->
-                      <div class="frequency">987人</div>
+                      <div class="frequency">987</div>
                     </div>
                     <span class="red">詐騙訊息。已通知臉書移除</span>
                   </div>
@@ -367,7 +430,7 @@
             <a href="#">
               <div class="col_39">
                 <div class="col foto">
-                  <img src="images/icon_pm.png" alt="">
+                  <img src="images/demo/d_2.jpg" alt="">
                 </div>
                 <div class="col info">
                   <div class="flexible">
@@ -382,7 +445,7 @@
                       <img src="images/s_Tiktok.png" alt="">
                       <img src="images/s_Web.png" alt="">
                       <img src="images/s_Youtube.png" alt=""> -->
-                      <div class="frequency">987人</div>
+                      <div class="frequency">987</div>
                     </div>
                     <span class="yellow">已通知謝金河本人。確認中</span>
                   </div>
@@ -394,7 +457,7 @@
             <a href="#">
               <div class="col_39">
                 <div class="col foto">
-                  <img src="images/icon_GOV.png" alt="">
+                  <img src="images/demo/d_3.jpg" alt="">
                 </div>
                 <div class="col info">
                   <div class="flexible">
@@ -409,7 +472,7 @@
                       <img src="images/s_Tiktok.png" alt="">
                       <img src="images/s_Web.png" alt="">
                       <img src="images/s_Youtube.png" alt=""> -->
-                      <div class="frequency">987人</div>
+                      <div class="frequency">987</div>
                     </div>
                     <span class="green">並非詐騙訊息</span>
                   </div>
@@ -421,7 +484,7 @@
             <a href="#">
               <div class="col_39">
                 <div class="col foto">
-                  <img src="images/icon_web.png" alt="">
+                  <img src="images/demo/d_4.jpg" alt="">
                 </div>
                 <div class="col info">
                   <div class="flexible">
@@ -436,7 +499,7 @@
                       <img src="images/s_Tiktok.png" alt="">
                       <img src="images/s_Web.png" alt="">
                       <img src="images/s_Youtube.png" alt=""> -->
-                      <div class="frequency">987人</div>
+                      <div class="frequency">987</div>
                     </div>
                     <span class="green">並非詐騙訊息</span>
                   </div>
@@ -448,7 +511,7 @@
             <a href="#">
               <div class="col_39">
                 <div class="col foto">
-                  <img src="images/icon_else.png" alt="">
+                  <img src="images/demo/d_5.jpg" alt="">
                 </div>
                 <div class="col info">
                   <div class="flexible">
@@ -463,7 +526,7 @@
                       <img src="images/s_Tiktok.png" alt="">
                       <img src="images/s_Web.png" alt="">
                       <img src="images/s_Youtube.png" alt=""> -->
-                      <div class="frequency">987人</div>
+                      <div class="frequency">987</div>
                     </div>
                     <span class="green">並非詐騙訊息</span>
                   </div>
@@ -475,7 +538,7 @@
             <a href="#">
               <div class="col_39">
                 <div class="col foto">
-                  <img src="images/demopic.png" alt="">
+                  <img src="images/demo/d_6.jpg" alt="">
                 </div>
                 <div class="col info">
                   <div class="flexible">
@@ -490,7 +553,7 @@
                       <img src="images/s_Tiktok.png" alt="">
                       <img src="images/s_Web.png" alt="">
                       <img src="images/s_Youtube.png" alt=""> -->
-                      <div class="frequency">987人</div>
+                      <div class="frequency">987</div>
                     </div>
                     <span class="green">並非詐騙訊息</span>
                   </div>
@@ -660,50 +723,124 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="js/customize.js"></script>
     <script>
-      // 圓餅圖
-      new Chart(document.getElementById('pieChart'), {
-        type: 'pie',
+      // 圓餅圖 1
+      new Chart(document.getElementById("pieChart"), {
+        type: "pie",
         data: {
-          datasets: [{
-            data: [25, 25, 50],
-            backgroundColor: ['#F765A3', '#A155B9', '#F4EA5A'],
-            borderWidth: [0, 0, 0],
-            hoverBackgroundColor: ['#F765A3', '#A155B9', '#F4EA5A']
-          }],
+          datasets: [
+            {
+              data: [39486, 12088, 7657, 912, 976],
+              backgroundColor: [
+                "#F765A3",
+                "#A155B9",
+                "#F4EA5A",
+                "#6495ED",
+                "#ECB3CD",
+              ],
+              borderWidth: [0, 0, 0, 0, 0],
+              hoverBackgroundColor: [
+                "#F765A3",
+                "#A155B9",
+                "#F4EA5A",
+                "#6495ED",
+                "#ECB3CD",
+              ],
+            },
+          ],
           labels: [
-            '購物詐騙', '偽冒政府訊息', '名人詐騙'
-          ]
+            "偽冒公眾人物",
+            "偽冒政府機構",
+            "私訊詐騙",
+            "一頁式詐騙廣告",
+            "其他詐騙",
+          ],
         },
         options: {
           animation: {
             animateRotate: true,
-            animateScale: true
+            animateScale: true,
           },
           legend: {
-            display: true,
-            position:'bottom',
+            display: false,
+            position: "bottom",
             labels: {
-              fontColor: '#ffffff',
-              fontSize: 16,
-              padding: 16
-            }
+              fontColor: "#ffffff",
+              fontSize: 14,
+              padding: 10,
+            },
           },
           tooltips: {
             // enabled: true,
-            displayColors: false
+            displayColors: false,
           },
           responsive: true,
           plugins: {
             labels: {
               precision: 1,
-              fontColor: ['#ffffff', '#ffffff', '#222222'],
-              position: 'center',
+              fontColor: ["#ffffff", "#ffffff", "#222222"],
+              position: "center",
               fontSize: 18,
-              fontWeight:'Bold'
-            }
-          }
-        }
-      })
+              fontWeight: "Bold",
+            },
+          },
+        },
+      });
+      // 圓餅圖 2
+      new Chart(document.getElementById("pieChart2"), {
+        type: "pie",
+        data: {
+          datasets: [
+            {
+              data: [39486, 12088, 7657, 912, 976],
+              backgroundColor: [
+                "#3077f2",
+                "#39c655",
+                "#f50804",
+                "#ea8129",
+                "#f1d172",
+              ],
+              borderWidth: [0, 0, 0, 0, 0],
+              hoverBackgroundColor: [
+                "#3077f2",
+                "#39c655",
+                "#f50804",
+                "#ea8129",
+                "#f1d172",
+              ],
+            },
+          ],
+          labels: ["Meta（臉書）", "Line", "Youtube", "IG", "一頁式廣告"],
+        },
+        options: {
+          animation: {
+            animateRotate: true,
+            animateScale: true,
+          },
+          legend: {
+            display: false,
+            position: "bottom",
+            labels: {
+              fontColor: "#ffffff",
+              fontSize: 14,
+              padding: 10,
+            },
+          },
+          tooltips: {
+            // enabled: true,
+            displayColors: false,
+          },
+          responsive: true,
+          plugins: {
+            labels: {
+              precision: 1,
+              fontColor: ["#ffffff", "#ffffff", "#222222"],
+              position: "center",
+              fontSize: 18,
+              fontWeight: "Bold",
+            },
+          },
+        },
+      });
       // 線條圖
       new Chart(document.getElementById("line-chart"), {
         type: "line",

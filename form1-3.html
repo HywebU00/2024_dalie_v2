@@ -5,76 +5,44 @@
     <!-- 使用 noindex 禁止 Google 搜尋建立索引，套版時請工程師刪掉這行 -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>查詢結果</title>
+    <title>個人專區首頁</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body id="innerType">
+  <body>
     <header>
       <div class="container">
-        <a href="cards.html"><h1>數發部打詐通報查詢網</h1></a>
+        <a href="#"><h1>打詐通報查詢網</h1></a>
+        <div class="menu">
+          <a href="cards.html"><span class="icon _hot"></span>熱門</a>
+          <a href="cards-2.html"><span class="icon _new"></span>最新</a>
+          <a href="chart2.html"><span class="icon _chart"></span>統計</a>
+          <a href="form1.html" class="act"><span class="icon _member"></span>個人</a>
+        </div>
       </div>
     </header>
     <div class="main">
       <div class="container">
-        <!-- 查詢結果 -->
-        <section class="col_48">
-          <div class="col">
-            <div class="card _demo _thin">
-              <div class="col_39">
-                <div class="col foto">
-                  <img src="images/demopic.png" alt="">
-                </div>
-                <div class="col info">
-                  <div class="flexible visible">
-                    <div class="dataDefine">
-                      <img src="images/s_Facebook.png" alt="">
-                      <!-- <img src="images/s_Instagram.png" alt="">
-                      <img src="images/s_Line.png" alt="">
-                      <img src="images/s_Tiktok.png" alt="">
-                      <img src="images/s_Web.png" alt="">
-                      <img src="images/s_Youtube.png" alt=""> -->
-                      <div class="frequency">987人</div>
-                    </div>
-                    <span class="red">詐騙訊息。已通知臉書移除</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 網址 -->
-            <div class="article">
-              <h3>網址：</h3>
-              <ul>
-                <li>https://www.facebook.com/permalink.php?story_fbid=pfb</li>
-              </ul>
-            </div>
+        <!-- 進階搜尋 search -->
+        <section class="site-search">
+          <input type="search" id="site-search" name="" placeholder="通報查詢可疑網址/關鍵字" />
+          <button class="submit">搜尋</button>
+        </section>
+        <section class="infoZone">
+          <div class="article">
+            <h3>您的手機號碼：</h3>
+            <ul>
+              <li>0930123456 <a href="">重設</a></li>
+            </ul>
           </div>
-          <div class="col">
-            <div class="article">
-              <h3>內容摘要</h3>
-              <div>
-                <p>
-              歡迎加入，提前布局，獲得第一手盈利策略
-              最近詐騙分子層出不窮，所以我建立了新的股票交流社群以供大家参考。<br>
-              新政策加持:該企業受到最新政策扶持，發展潛力無限。
-              資金流入:外資、投信大戶連續3天買人，共計546.36億元。
-              訂單爆滿:近期接獲80億訂單，產能全開，業績爆發指日可待。
-            </p>
-              </div>
-              <!-- <div class="mask">
-                <p>這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷史分開讀，例如讀到乾隆皇帝，我們不知道法國國王是誰？也不知道英國是哪個皇帝？1624年荷蘭人到台南，1626西班牙人來到基隆，建立聖蕯爾瓦多城。<br>歐洲人東來，與1600年東印度公司成立有關，之前是1588年英格蘭打敗西班牙的無敵艦隊，歐洲的英國、法國、荷蘭、西班牙競逐海外殖民地，進入大航海時代，台灣在大航海時代，已經和世界接軌了。這一集今周刊封面故事介紹台南400年，這是一個有深度，又豐富的歴史題目。這次賴清德總統就職，也從1624年台南熱蘭遮城談起。其實1600年前後是一個很值得探索的時代。以前我們讀歷史，都把本國歴史和外國歷史分開讀，例如讀到乾隆皇帝，我們不知道法國國王是誰？也不知道英國是哪個皇帝？1624年荷蘭人到台南，1626西班牙人來到基隆，建立聖蕯爾瓦多城。<br>歐洲人東來，與1600年東印度公司成立有關，之前是1588年英格蘭打敗西班牙的無敵艦隊，歐洲的英國、法國、荷蘭、西班牙競逐海外殖民地，進入大航海時代，台灣在大航海時代，已經和世界接軌了。西班牙的無敵艦隊，歐洲的英國、法國、荷蘭、西班牙競逐海外殖民地，進入大航海時代，台灣在大航海時代，已經和世界接軌了西班牙的無敵艦隊，歐洲的英國、法國、荷蘭、西班牙競逐海外殖民地，進入大航海時代，台灣在大航海時代，已經和世界接軌了</p>
-                <button class="btn">閱讀全文</button>
-              </div> -->
-              <h3>處理進度</h3>
-              <ul>
-                <li><time datetime="">2024/05/21&nbsp;18:42</time>民眾通報，疑似詐騙訊息；</li>
-                <li><time datetime="">2024/05/21&nbsp;18:42</time>已通知謝金河本人，確認中；</li>
-                <li><time datetime="">2024/05/21&nbsp;18:42</time>謝金河本人確認，這是詐騙訊息；</li>
-                <li><time datetime="">2024/05/21&nbsp;18:42</time>通知臉書移除該訊息；</li>
-                <li><time datetime="">2024/05/21&nbsp;18:42</time>臉書已移除本詐騙訊息。</li>
-              </ul>
-            </div>
+          <div class="article">
+            <h3>通報紀錄：</h3>
+            <ul>
+              <li>累計通報件數：<span>23</span></li>
+              <li>已確認件數：<span>21</span></li>
+              <li>確認比率：<span>91.3%</span></li>
+            </ul>
           </div>
         </section>
       </div>
