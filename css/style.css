@@ -320,8 +320,8 @@
     border: none;
   }
   .btn.submit:hover, .btn.submit:focus-visible {
-    background: #04559f;
-    color: #000;
+    background: #0562b8;
+    color: #fff;
   }
   .btn.normal {
     background: #434343;
@@ -1335,14 +1335,14 @@
     transition: 0.3s;
   }
   .p_shift a:hover, .p_shift a:focus-visible {
-    color: #222;
+    color: #fff;
   }
   .p_shift a.back {
     background: url(../images/icon-back-b.svg) 20px 50% no-repeat rgba(255, 255, 255, 0.1254901961);
     background-size: 16px 16px;
   }
   .p_shift a.back:hover, .p_shift a.back:focus-visible {
-    background: url(../images/icon-back.svg) 16px 50% no-repeat #2a96f9;
+    background: url(../images/icon-back-w.svg) 16px 50% no-repeat #2a96f9;
     background-size: 16px 16px;
   }
   .function {

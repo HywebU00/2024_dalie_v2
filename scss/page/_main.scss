@@ -80,8 +80,8 @@ hr {
 
     &:hover,
     &:focus-visible {
-      background: darken($linkColor, 25);
-      color: #000;
+      background: darken($linkColor, 20);
+      color: #fff;
     }
   }
   &.normal {
@@ -1364,7 +1364,7 @@ $duration: 1.4s;
     &:hover,
     &:focus-visible {
       // background: $linkColor;
-      color: #222;
+      color: #fff;
     }
 
     &.back {
@@ -1373,7 +1373,7 @@ $duration: 1.4s;
       background-size: 16px 16px;
       &:hover,
       &:focus-visible {
-        background: url(../images/icon-back.svg) 16px 50% no-repeat $linkColor;
+        background: url(../images/icon-back-w.svg) 16px 50% no-repeat $linkColor;
         background-size: 16px 16px;
       }
     }
