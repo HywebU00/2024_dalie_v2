@@ -593,15 +593,15 @@
     color: #2a96f9;
   }
   header h1 {
-    padding-left: 330px;
-    background: url(../images/logo.svg) left 50% no-repeat;
     background-size: contain;
     height: 52px;
     font-size: 1.65em;
     letter-spacing: 3px;
     font-weight: normal;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    padding-left: 110px;
+    background: url(../images/logo_mobile.svg) left 50% no-repeat;
   }
   header .menu {
     display: flex;
@@ -668,7 +668,7 @@
       height: 40px;
       margin-top: 10px;
       margin-bottom: 0;
-      padding-left: 254px;
+      padding-left: 80px;
     }
     header .menu {
       width: 100%;
@@ -691,8 +691,6 @@
   @media (max-width: 576px) {
     header h1 {
       font-size: 1.5em;
-      padding-left: 80px;
-      background: url(../images/logo_mobile.svg) left 50% no-repeat;
     }
   }
   .main {
@@ -718,6 +716,9 @@
     .embadeZone iframe {
       width: 320px;
     }
+  }
+  #innerType header .container {
+    justify-content: start;
   }
   #innerType header h1 {
     background: url(../images/icon-back-w.svg) 10px 50% no-repeat;
@@ -864,7 +865,7 @@
   .card {
     background: #202020;
     padding: 0.65em 1em;
-    margin: 6px 0 8px 0;
+    margin-bottom: 8px;
     z-index: 0;
   }
   .card a {
@@ -1172,8 +1173,13 @@
   .card._demo > a {
     padding: 2px 4px;
   }
+  .card._demo._thin {
+    padding: 6px 4px;
+  }
   .card._demo .col_39 {
     align-items: flex-end;
+    margin: 0px 4px 2px 4px;
+    padding: 2px 0;
   }
   .card._demo .col_39 > .col:first-child {
     flex: 0 0 20%;
@@ -1185,21 +1191,8 @@
     flex: 1 1 auto;
     max-width: calc(100% - 80px - 0.5em);
   }
-  @media (max-width: 768px) {
-    .card._demo {
-      margin: 0 0 8px 0;
-    }
-    .card._demo._thin {
-      padding: 6px 4px;
-    }
-    .card._demo .col_39 {
-      margin: 0px 4px 2px 4px;
-      padding: 2px 0;
-      align-items: flex-end;
-    }
-    .card._demo .info {
-      margin-top: 8px;
-    }
+  .card._demo .col_39 .info {
+    margin-top: 8px;
   }
   @media (max-width: 768px) {
     .card {
@@ -1431,16 +1424,14 @@
   @media (max-width: 992px) {
     .site-search {
       position: fixed;
-      width: 390px;
-      top: 120px;
+      max-width: none;
+      width: 100%;
+      top: 123px;
       left: 50%;
       transform: translateX(-50%);
       z-index: 1001;
       margin: 0 auto;
-      padding: 6px 8px 6px;
-      background: #333;
-      top: 123px;
-      width: 389px;
+      padding: 6px 1em;
     }
     .site-search input {
       border: 1px solid #202020;
@@ -1453,7 +1444,7 @@
       background: url(../images/icon-search.svg) 50% 50% no-repeat transparent;
       background-size: 24px 24px;
       position: absolute;
-      left: 9px;
+      left: 18px;
       border-radius: 3px 0 0 3px;
       transition: 0.3s;
     }
@@ -1462,10 +1453,18 @@
       background-size: 24px 24px;
     }
     .site-search input[type=search] {
-      width: 393px;
+      width: 100%;
       padding: 4px 26px 4px 52px;
       background: #202020;
       transition: 0.3s;
+    }
+  }
+  @media (max-width: 768px) {
+    .site-search {
+      padding: 6px 0.5em;
+    }
+    .site-search button.submit {
+      left: 10px;
     }
   }
   .infoSplit p {
