@@ -484,6 +484,7 @@ header {
     .container {
       flex-wrap: wrap;
       min-height: 50px;
+      justify-content: center;
       // height: 120px;
     }
     h1 {
@@ -1159,6 +1160,9 @@ $imgWH: 60px;
     }
   }
   &._demo {
+    > a{
+      padding: 2px 4px;
+    }
     $imgWH: 75px;
     .col_39 {
       align-items: flex-end;
