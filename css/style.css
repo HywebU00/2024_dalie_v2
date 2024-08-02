@@ -727,6 +727,9 @@
     align-items: center;
     margin: 20px 0;
   }
+  #innerType header .menu {
+    display: none;
+  }
   #innerType .main .container {
     padding-top: 100px;
   }
