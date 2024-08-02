@@ -1029,6 +1029,9 @@
     overflow: hidden;
     margin: 4px 0 2px;
   }
+  .card .info > p {
+    height: 35.34px;
+  }
   .card .info ul {
     list-style: none;
   }
