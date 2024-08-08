@@ -1528,6 +1528,7 @@
     margin: 10px 0;
     display: flex;
     position: relative;
+    word-break: break-all;
   }
   .article ol li:before,
   .article ul li:before {

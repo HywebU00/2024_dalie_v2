@@ -1631,6 +1631,7 @@ $duration: 1.4s;
       margin: 10px 0;
       display: flex;
       position: relative;
+      word-break: break-all;
       &:before {
         content: "";
         position: absolute;
