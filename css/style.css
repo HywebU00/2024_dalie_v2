@@ -1529,6 +1529,7 @@
     display: flex;
     position: relative;
     word-break: break-all;
+    margin: 0;
   }
   .article ol li:before,
   .article ul li:before {
@@ -1543,16 +1544,19 @@
   }
   .article ol li time,
   .article ul li time {
-    margin-right: 8px;
-    min-width: 140px;
+    margin-right: 18px;
+    min-width: 0;
+  }
+  .article p, .article li {
+    opacity: 0.6;
+    line-height: 1.45;
   }
   @media (max-width: 768px) {
-    .article ol li, .article ul li {
-      margin: 0;
+    .article ol li time, .article ul li time {
+      margin-right: 8px;
+      min-width: 140px;
     }
     .article p, .article li {
-      opacity: 0.6;
-      line-height: 1.4;
       font-size: 85%;
     }
   }
