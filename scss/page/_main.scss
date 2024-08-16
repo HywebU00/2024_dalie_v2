@@ -174,9 +174,9 @@ form {
         margin-left: 10px;
       }
       span{
-        font-size: 13.6px;
         display: inline-block;
         padding-right: 2px;
+        letter-spacing: 2px;
       }
     }
   }
@@ -194,6 +194,10 @@ form {
           border: none;
           font-size: 13.6px;
           border-radius: 3px;
+          letter-spacing: 1px;
+        }
+        span{
+          font-size: 13.6px;
           letter-spacing: 1px;
         }
       }
