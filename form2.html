@@ -37,12 +37,29 @@
         <!-- 表單 -->
         <form action="">
           <div class="formGrp">
-            <label for="" class="title" aria-required="true">廣告的顯示網址：</label>
+            <label for="" class="title" aria-required="true">疑似詐騙網址：</label>
             <div class="content">
-              <input type="text" id="fake-legend" placeholder="" value="https://money.jin-shuo.com.tw/?gad_sourc">
+              <input type="text" id="fake-legend" placeholder="" value="https://money.jin-shuo.com.tw/?gad_sourc" readonly>
             </div>
           </div>
           <div class="formGrp">
+            <label for="" class="title" aria-required="true">您的手機號碼：</label>
+            <div class="content">
+              <input name="phone" id="phone" type="tel" placeholder="手機格式 0912345678">
+              <button class="btn normal">發送OTP驗證碼</button>
+            </div>
+          </div>
+          <div class="formGrp">
+            <label for="" class="title" aria-required="true">手機驗證碼：</label>
+            <div class="content">
+              <span>ADI-</span><input type="text" id="fake-legend" placeholder="請輸入文字">
+            </div>
+          </div>
+          <section class="btnGrp">
+            <button class="btn submit">送出通報<img src="images/Ellipse3.svg" alt="" class="spinner"></button>
+            <button class="btn submit _going">送出通報<img src="images/Ellipse3.svg" alt="" class="spinner"></button>
+          </section>
+          <!-- <div class="formGrp">
             <label for="" class="title" aria-required="true">Google廣告網址：</label>
             <div class="content">
               <input type="text" id="fake-legend" placeholder="" value="https://money.jin-shuo.com.tw/?gad_sourc">
@@ -72,10 +89,7 @@
             <div class="content">
               <input type="text" id="fake-legend" placeholder="請輸入文字">
             </div>
-          </div>
-          <section class="btnGrp">
-            <button class="btn submit">送出通報</button>
-          </section>
+          </div> -->
         </form>
       </div>
     </div>
