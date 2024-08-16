@@ -377,6 +377,19 @@
     width: 100%;
     margin: 6px 0;
   }
+  form input:-moz-read-only, form select:-moz-read-only {
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: 0;
+    opacity: 0.6;
+  }
+  form input:read-only,
+  form select:read-only {
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: 0;
+    opacity: 0.6;
+  }
   form .formGrp {
     margin: 10px 0;
   }
