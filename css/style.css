@@ -1169,6 +1169,10 @@
     padding: 0 4px;
     color: #2a96f9;
   }
+  .card h4 + h5 {
+    margin-top: -20px;
+    margin-bottom: 1.5em;
+  }
   .card p.data {
     font-size: 3em;
     display: flex;
@@ -1309,6 +1313,10 @@
     .card h4 {
       font-size: 19px;
       margin: 0 0 10px;
+    }
+    .card h4 + h5 {
+      margin-top: -10px;
+      margin-bottom: 10px;
     }
     .card._narrow {
       padding: 20px;

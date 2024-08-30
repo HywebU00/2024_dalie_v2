@@ -1159,6 +1159,10 @@ $imgWH: 60px;
       padding: 0 4px;
       color: $linkColor;
     }
+    + h5{
+      margin-top: -20px;
+      margin-bottom: 1.5em;
+    }
   }
   p.data {
     font-size: 3em;
@@ -1338,6 +1342,10 @@ $imgWH: 60px;
     h4{
       font-size: 19px;
       margin: 0 0 10px;
+      + h5{
+        margin-top: -10px;
+        margin-bottom: 10px;
+      }
     }
     &._narrow {
       padding: 20px;
