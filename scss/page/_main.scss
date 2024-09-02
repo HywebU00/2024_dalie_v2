@@ -485,7 +485,7 @@ header {
     // align-items: flex-end;
     align-items: center;
 
-    padding-left: 110px;
+    padding-left: 90px;
     background: url(../images/logo_mobile.svg) left 50% no-repeat;
   }
   .menu {
@@ -575,7 +575,7 @@ header {
       margin-top: 10px;
       margin-bottom: 0;
       // padding-left: 254px;
-      padding-left: 80px;
+      padding-left: 72px;
       // font-size: 90%;
     }
     .menu {
@@ -1443,6 +1443,10 @@ $imgWH: 60px;
       justify-content: space-between;
       margin: 0;
 
+      &.note{
+        letter-spacing: 0;
+      }
+
       a{
         text-decoration: underline;
       }
@@ -1823,7 +1827,8 @@ $duration: 1.4s;
   }
   // 老實說真的蠻擊敗的
   p, li{
-      opacity: 0.6;
+      // opacity: 0.6;
+      color: #aaa;
       line-height: 1.45;
       // font-size: 85%;
     }

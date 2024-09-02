@@ -676,7 +676,7 @@
     font-weight: normal;
     display: flex;
     align-items: center;
-    padding-left: 110px;
+    padding-left: 90px;
     background: url(../images/logo_mobile.svg) left 50% no-repeat;
   }
   header .menu {
@@ -744,7 +744,7 @@
       height: 40px;
       margin-top: 10px;
       margin-bottom: 0;
-      padding-left: 80px;
+      padding-left: 72px;
     }
     header .menu {
       width: 100%;
@@ -1397,6 +1397,9 @@
     justify-content: space-between;
     margin: 0;
   }
+  .infoZone .article li.note {
+    letter-spacing: 0;
+  }
   .infoZone .article li a {
     text-decoration: underline;
   }
@@ -1698,7 +1701,7 @@
     text-decoration: underline;
   }
   .article p, .article li {
-    opacity: 0.6;
+    color: #aaa;
     line-height: 1.45;
   }
   @media (max-width: 768px) {
