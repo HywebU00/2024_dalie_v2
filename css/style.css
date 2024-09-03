@@ -934,13 +934,13 @@
     }
   }
   .red {
-    color: red;
+    color: red !important;
   }
   .green {
-    color: #2fbe08;
+    color: #2fbe08 !important;
   }
   .yellow {
-    color: yellow;
+    color: yellow !important;
   }
   .card {
     background: #202020;
