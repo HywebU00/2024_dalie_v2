@@ -164,7 +164,7 @@ form {
       display: block;
       margin-top: 10px;
       // padding-left: 20px;
-      font-size: 16px;
+      font-size: 19px;
     }
     .content {
       display: flex;
@@ -899,13 +899,13 @@ $imgWH: 60px;
 //   font-weight: bold;
 // }
 .red {
-  color: red;
+  color: red !important;
 }
 .green {
-  color: #2fbe08;
+  color: #2fbe08 !important;
 }
 .yellow {
-  color: yellow;
+  color: yellow !important;
 }
 // 卡片
 .card {
