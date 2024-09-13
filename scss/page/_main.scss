@@ -179,6 +179,24 @@ form {
         letter-spacing: 2px;
       }
     }
+
+    // 隱私權條款
+    .check_grp{
+      label{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      input[type="checkbox"]{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+      }
+      a{
+        margin-left: 6px;
+      }
+    }
   }
   @media (max-width: $screenSm) {
     input,
