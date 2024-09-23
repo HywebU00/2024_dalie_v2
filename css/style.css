@@ -805,9 +805,6 @@
     padding-top: calc(100px + 1em);
     padding-bottom: 4em;
   }
-  .main._private .container {
-    padding-top: 2em;
-  }
   .main._private .article p b, .main._private .article li b {
     color: #ccc;
   }
