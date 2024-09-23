@@ -306,6 +306,20 @@
       font-size: 13.6px;
     }
   }
+  p.split {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  p.split a {
+    display: inline-block;
+  }
+  @media (max-width: 768px) {
+    p.split {
+      justify-content: left;
+      font-size: 13.6px;
+    }
+  }
   .btnGrp {
     text-align: center;
     padding: 1.75em 0;
@@ -790,6 +804,22 @@
   .main .container {
     padding-top: calc(100px + 1em);
     padding-bottom: 4em;
+  }
+  .main._private .container {
+    padding-top: 2em;
+  }
+  .main._private .article ol, .main._private .article ul {
+    overflow: visible;
+    margin-left: 43px;
+  }
+  .main._private .article ol {
+    list-style: auto;
+  }
+  .main._private .article ol li {
+    display: list-item;
+  }
+  .main._private .article ol li::before {
+    display: none;
   }
   @media (max-width: 992px) {
     .main .container {
@@ -1674,6 +1704,11 @@
   }
   .article p {
     margin: 12px 0 12px 20px;
+  }
+  .article p.split {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
   }
   .article ol,
   .article ul {

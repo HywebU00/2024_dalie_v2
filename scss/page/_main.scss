@@ -61,7 +61,19 @@ hr {
     }
   }
 }
-
+p.split{
+  // 擊敗*的對齊
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  a{
+    display: inline-block;
+  }
+  @media (max-width: $screenSm) {
+    justify-content: left;
+    font-size: 13.6px;
+  }
+}
 // 按鈕
 .btnGrp {
   text-align: center;
@@ -633,6 +645,28 @@ header {
   .container {
     padding-top: calc(100px + 1em);
     padding-bottom: 4em;
+  }
+
+  &._private{
+    .container{
+      padding-top: 2em;
+    }
+    // 文章
+    .article {
+      ol, ul{
+        overflow: visible;
+        margin-left: 43px;
+      }
+      ol{
+        list-style: auto;
+        li{
+          display: list-item;
+          &::before{
+            display: none;
+          }
+        }
+      }
+    }
   }
 
   @media (max-width: $screenMd) {
@@ -1805,6 +1839,12 @@ $duration: 1.4s;
   }
   p {
     margin: 12px 0 12px 20px;
+
+    &.split{
+      display: flex;
+      justify-content: left;
+      align-items: flex-start;
+    }
   }
   ol,
   ul {
