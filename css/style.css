@@ -808,6 +808,9 @@
   .main._private .container {
     padding-top: 2em;
   }
+  .main._private .article p b, .main._private .article li b {
+    color: #ccc;
+  }
   .main._private .article ol, .main._private .article ul {
     overflow: visible;
     margin-left: 43px;

@@ -653,6 +653,11 @@ header {
     }
     // 文章
     .article {
+      p, li{
+        b{
+          color: #ccc;
+        }
+      }
       ol, ul{
         overflow: visible;
         margin-left: 43px;
