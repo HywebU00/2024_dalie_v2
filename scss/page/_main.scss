@@ -118,6 +118,7 @@ p.split{
     }
 
     &:hover,
+    &:active,
     &:focus-visible {
       background: darken($linkColor, 20);
       color: #fff;
@@ -132,10 +133,14 @@ p.split{
   &.normal {
     // 淺灰底白字
     background: #434343;
+
+    &.act,
     &:hover,
+    &:active,
     &:focus-visible {
       color: $linkColor;
       background: transparent;
+      border-color: $linkColor;
     }
   }
   &.filter {
@@ -1531,7 +1536,7 @@ $imgWH: 60px;
   }
 }
 
-//
+
 $offset: 187;
 $duration: 1.4s;
 

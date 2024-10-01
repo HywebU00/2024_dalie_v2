@@ -355,7 +355,7 @@
     animation: rotator 0.6s linear infinite;
     display: none;
   }
-  .btn.submit:hover, .btn.submit:focus-visible {
+  .btn.submit:hover, .btn.submit:active, .btn.submit:focus-visible {
     background: #0562b8;
     color: #fff;
   }
@@ -365,9 +365,10 @@
   .btn.normal {
     background: #434343;
   }
-  .btn.normal:hover, .btn.normal:focus-visible {
+  .btn.normal.act, .btn.normal:hover, .btn.normal:active, .btn.normal:focus-visible {
     color: #2a96f9;
     background: transparent;
+    border-color: #2a96f9;
   }
   .btn.filter {
     border: none;
