@@ -289,6 +289,10 @@
     font-size: 2rem;
     letter-spacing: 3px;
   }
+  .mainTitle h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
   .mainTitle p {
     margin: 1em 0;
     letter-spacing: 1px;
