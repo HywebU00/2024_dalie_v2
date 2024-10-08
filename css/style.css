@@ -426,6 +426,11 @@
     padding-right: 2px;
     letter-spacing: 2px;
   }
+  form .formGrp .content > p {
+    opacity: 0.6;
+    word-break: break-all;
+    margin: 6px 0;
+  }
   form .formGrp .check_grp label {
     display: flex;
     align-items: center;
